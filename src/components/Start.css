@@ -1,0 +1,90 @@
+.start {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F7FB;
+    padding: 40px 0px;
+}
+
+.start--title {
+    z-index: 2;
+    color: #293264;
+    font-family: "Karla", sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.start--description {
+    z-index: 2;
+    font-size: 1.75em;
+    color: #293264;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.start--difficulty {
+    z-index: 2;
+    margin-top: 20px;
+    padding: 20px;
+    color: #293264;
+    background-color: #FFFAD1;
+    border-radius: 5px;
+    border-color: #4D5B9E
+}   
+
+.start--difficulty > legend {
+    font-family: "Karla", sans-serif;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+
+.start--difficulty > label {
+    padding-left: 8px;
+    font-size: 1.5em;    
+}   
+
+.start--difficulty > input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}   
+    
+.start--difficulty > input:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+.start--quiz {
+    z-index: 2;
+    padding: 12px 24px;
+    background: #4D5B9E;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.75em;
+    color: #F5F7FB;
+    margin-top: 40px;
+}
+
+.blob1 {
+    z-index: 1;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    width: 25%;
+}
+.blob2 {
+    z-index: 1;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 25%;
+}
