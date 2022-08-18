@@ -41,6 +41,11 @@
     font-size: 1.75em;
 }
 
+.start--options > select > option {
+    font-family: "Karla", sans-serif;
+    color: #293264;
+    background-color: #F5F7FB;
+}
 
 .start--options > label {
     padding-left: 8px;

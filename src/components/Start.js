@@ -27,11 +27,11 @@ export default function Start(props) {
                         <option value="10">Books</option>
                         <option value="11">Film</option>
                         <option value="12">Music</option>
-                        <option value="13">Musicals &amp Theatre</option>
+                        <option value="13">Musicals & Theatre</option>
                         <option value="14">Television</option>
                         <option value="15">Video Games</option>
                         <option value="16">Board Games</option>
-                        <option value="17">Science &amp Nature</option>
+                        <option value="17">Science & Nature</option>
                         <option value="18">Computers</option>
                         <option value="19">Mathematics</option>
                         <option value="20">Mythology</option>
@@ -45,8 +45,8 @@ export default function Start(props) {
                         <option value="28">Vehicles</option>
                         <option value="29">Comics</option>
                         <option value="30">Gadgets</option>
-                        <option value="31">Anime &amp Manga</option>
-                        <option value="32">Cartoons &amp Animation</option>
+                        <option value="31">Anime & Manga</option>
+                        <option value="32">Cartoons & Animation</option>
                     </select>
             </fieldset>
            
