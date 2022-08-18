@@ -26,11 +26,11 @@ export default function Quiz(props) {
     }
     
     React.useEffect(()=> {
-        questionsArray.map(question => {
+        questionsArray.forEach(question => {
             question.chosenAnswer === question.correctAnswer &&
             setCorrectAnswerCount(prevCount => prevCount + 1)
         })
-    },[quizFinished])
+    },[questionsArray, quizFinished])
   
     return(
         <div className="quiz">
