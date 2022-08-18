@@ -1,10 +1,13 @@
 import React from "react"
+import "./Start.css"
+import blob1 from "../images/blob1.png"
+import blob2 from "../images/blob2.png"
 
 export default function Start(props) {
     return(
         <div className="start">
             
-            <img src="../images/blob1.png" className="blob1" />
+            <img src={blob1}  alt="" className="blob1" />
             
             <h1 className="start--title">Questionable</h1>
             <p className="start--description">
@@ -52,7 +55,7 @@ export default function Start(props) {
                 Generate Quiz
             </button>
             
-            <img src="../images/blob2.png" className="blob2"/>
+            <img src={blob2} alt="" className="blob2"/>
             
         </div>
     )

@@ -1,5 +1,8 @@
 import React from "react"
 import Questions from "./Questions"
+import "./Quiz.css"
+import blob3 from "../images/blob3.png"
+import blob4 from "../images/blob4.png"
 
 export default function Quiz(props) {
     
@@ -31,7 +34,7 @@ export default function Quiz(props) {
   
     return(
         <div className="quiz">
-            <img className="blob3" src="../images/blob3.png" /> 
+            <img className="blob3" src={blob3} alt="" /> 
             <Questions 
                 questionsArray={questionsArray}
                 setQuestionsArray={setQuestionsArray}
@@ -46,7 +49,7 @@ export default function Quiz(props) {
                     {quizFinished ? 'Menu' : 'Check Answers'}
                 </button>
             </div>
-            <img className="blob4" src="../images/blob4.png" />
+            <img className="blob4" src={blob4} alt="" />
         </div>
     )
 }
