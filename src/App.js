@@ -26,7 +26,7 @@ export default function App() {
       .then(res => res.json())
       .then(data => setQuiz(data))
     },
-  [category, difficulty, handleQuiz])
+  [category, difficulty, quizGenerated])
     
   return(
     <div>
@@ -37,7 +37,6 @@ export default function App() {
       />}
       {quizGenerated && <Quiz 
         quiz={quiz.results}
-        handleDifficulty={handleDifficulty}
         handleQuiz={handleQuiz}
       />}
     </div>

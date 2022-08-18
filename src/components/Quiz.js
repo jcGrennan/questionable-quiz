@@ -18,19 +18,21 @@ export default function Quiz(props) {
         ))
     )
     
-    const [correctAnswerCount, setCorrectAnswerCount] = React.useState(0)
     const [quizFinished, setQuizFinished] = React.useState(false)
+    const [correctAnswerCount, setCorrectAnswerCount] = React.useState(0)
     
     function handleAnswers() {
         setQuizFinished(true)
     }
-    
-    React.useEffect(()=> {
+
+    React.useEffect(() => {
+        let currentCount = 0
         questionsArray.forEach(question => {
-            question.chosenAnswer === question.correctAnswer &&
-            setCorrectAnswerCount(prevCount => prevCount + 1)
-        })
-    },[questionsArray, quizFinished])
+            question.chosenAnswer === question.correctAnswer && currentCount++
+            setCorrectAnswerCount(currentCount)
+    })
+    }, [questionsArray, quizFinished])
+    
   
     return(
         <div className="quiz">
