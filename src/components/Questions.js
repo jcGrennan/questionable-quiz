@@ -4,18 +4,18 @@ import {decode} from "html-entities"
 
 export default function Questions(props) {
     
-    function shuffle(array) {
-        let currentIndex = array.length
-        let randomIndex = Math.floor(Math.random() * currentIndex)
+    // function shuffle(array) {
+    //     let currentIndex = array.length
+    //     let randomIndex = Math.floor(Math.random() * currentIndex)
 
-        while (currentIndex != 0) {
-            randomIndex                
-            currentIndex--
-            [array[currentIndex], array[randomIndex]] = 
-            [array[randomIndex], array[currentIndex]]
-        }
-        return array
-    }
+    //     while (currentIndex != 0) {
+    //         randomIndex                
+    //         currentIndex--
+    //         [array[currentIndex], array[randomIndex]] = 
+    //         [array[randomIndex], array[currentIndex]]
+    //     }
+    //     return array
+    // }
     
     function handleAnswers(event) {
         props.setQuestionsArray(prevQuestionsArray => prevQuestionsArray.map(question => (

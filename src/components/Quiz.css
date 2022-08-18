@@ -1,3 +1,81 @@
+.quiz {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 75px 25px 75px;
+}
+
+.quiz--question_answer {
+    z-index: 2;
+    max-width: 700px;
+}
+
+.quiz--question {
+    z-index: 2;
+    font-family: "Karla", sans-serif;
+    font-size: 1.25em;
+    color: #293264;
+    margin: 0;
+}
+
+.quiz--all_answers {
+    display: flex;
+    align-items: center;
+}
+
+.quiz--radio_buttons > input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.quiz--radio_buttons > input:focus {
+    outline: none;
+}
+
+.quiz--radio_buttons > label {
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 5px 8px;
+    background: #F5F7FB;
+    color: #293264;
+    font-size: 0.9em;
+    font-weight: 500;
+    border: 0.75px solid #4D5B9E;
+    border-radius: 8px;
+}
+
+.quiz--radio_buttons > input:checked+label {
+    background: #D6DBF5;
+    border: none;
+}
+
+.quiz--hr {
+    z-index: 2;
+    border: 0.8px solid #DBDEF0;
+    transform: rotate(-0.05deg);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.blob3 {
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 25%;
+}
+
+.blob4 {
+    z-index: 1;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 25%;
+}
+
 .quiz--finished {
     display: flex;
     justify-content: center;

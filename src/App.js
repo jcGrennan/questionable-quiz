@@ -20,7 +20,7 @@ export default function App() {
         fetch(`https://opentdb.com/api.php?amount=5&difficulty=${difficulty}&type=multiple`)
             .then(res => res.json())
             .then(data => setQuiz(data))
-    },[difficulty])
+    },[difficulty, handleQuiz])
     
     return(
         <div>
