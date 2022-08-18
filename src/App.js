@@ -14,7 +14,7 @@ export default function App() {
   }
   
   function handleCategory(event) {
-    setCategory(event.target.checked)
+    setCategory(event.target.value)
   }
   
   const handleQuiz = React.useCallback(()=> {
@@ -33,6 +33,7 @@ export default function App() {
       {!quizGenerated && <Start
         difficulty={difficulty}
         handleDifficulty={handleDifficulty}
+        category={category}
         handleCategory={handleCategory}
         handleQuiz={handleQuiz}
       />}

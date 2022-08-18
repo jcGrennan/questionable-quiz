@@ -25,7 +25,7 @@
     padding: 0px 50px;
 }
 
-.start--difficulty {
+.start--options {
     z-index: 2;
     margin-top: 20px;
     padding: 20px;
@@ -35,19 +35,19 @@
     border-color: #4D5B9E
 }   
 
-.start--difficulty > legend {
+.start--options > legend {
     font-family: "Karla", sans-serif;
     text-align: center;
     font-size: 1.75em;
 }
 
 
-.start--difficulty > label {
+.start--options > label {
     padding-left: 8px;
     font-size: 1.5em;    
 }   
 
-.start--difficulty > input {
+.start--options > input {
     -webkit-appearance: none;
     appearance: none;
     background-color: #fff;
@@ -58,7 +58,7 @@
     border-radius: 50%;
 }   
     
-.start--difficulty > input:focus {
+.start--options > input:focus {
     outline: max(2px, 0.15em) solid currentColor;
     outline-offset: max(2px, 0.15em);
 }
