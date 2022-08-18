@@ -11,7 +11,7 @@ export default function Start(props) {
             
             <h1 className="start--title">Questionable</h1>
             <p className="start--description">
-                A Randomly Generated Quiz of Five Multiple-Choice  Questions!
+                A Randomly Generated Quiz of Five Multiple-Choice Questions!
             </p>
            
             <fieldset className="start--difficulty">
