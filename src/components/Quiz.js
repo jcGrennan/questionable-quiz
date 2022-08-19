@@ -35,7 +35,7 @@ export default function Quiz(props) {
 
     // declaring a function that sets quizFinished to true to show correctAnswerCount
 
-    function handleAnswers() {
+    function handleResults() {
         setQuizFinished(true)
     }
 
@@ -79,7 +79,7 @@ export default function Quiz(props) {
                 {quizFinished && <h3 className="quiz--count">{correctAnswerCount}/5 CORRECT</h3>} 
 
                 {/* using a ternary to determine whether to show results or return to Start */}
-                <button className="quiz--check" onClick={quizFinished ? props.handleQuiz : handleAnswers}>
+                <button className="quiz--check" onClick={quizFinished ? props.handleQuiz : handleResults}>
                     {quizFinished ? 'Menu' : 'Check Answers'}
                 </button>
 
