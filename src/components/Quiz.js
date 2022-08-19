@@ -78,12 +78,9 @@ export default function Quiz(props) {
                 {/* conditionally rendering the quiz results when the quiz is finished */}
                 {quizFinished && <h3 className="quiz--count">{correctAnswerCount}/5 CORRECT</h3>} 
 
-                <button 
-
-                    className="quiz--check"> 
-                    onClick={quizFinished ? props.handleQuiz : handleAnswers} {/*sets quiz to finished then returns to Start*/}
+                {/* using a ternary to determine whether to show results or return to Start */}
+                <button className="quiz--check" onClick={quizFinished ? props.handleQuiz : handleAnswers}>
                     {quizFinished ? 'Menu' : 'Check Answers'}
-
                 </button>
 
             </div>
