@@ -1,3 +1,5 @@
+/* followed Figma design file */
+
 .quiz {
     display: flex;
     flex-direction: column;
