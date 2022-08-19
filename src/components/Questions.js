@@ -93,6 +93,7 @@ export default function Questions(props) {
         // assigning them all to an array
         const answerElements = [correctAnswerElements, ...incorrectAnswerElements]
 
+
         // then sorting the answers alphabetically so the first answer won't always be the correct one.
         answerElements.sort((answer, nextAnswer) => 
             answer.props.children[0].props.id.localeCompare(nextAnswer.props.children[0].props.id
@@ -119,4 +120,5 @@ export default function Questions(props) {
     return (
         <div className="quiz--question_answer">{questionElements}</div>
     )
+    
 }
