@@ -24,6 +24,8 @@
     align-items: center;
 }
 
+
+/* styled radio buttons by first removing their appearance and outline */
 .quiz--radio_buttons > input {
     -webkit-appearance: none;
     appearance: none;
