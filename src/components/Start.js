@@ -1,4 +1,3 @@
-import React from "react"
 import "./Start.css"
 import blob1 from "../images/blob1.png"
 import blob2 from "../images/blob2.png"
@@ -19,7 +18,7 @@ export default function Start(props) {
                     <select 
                         id="category"
                         value={props.category}
-                        onChange={props.handleCategory}
+                        onChange={props.handleOptions}
                         name="category"
                     >
                         <option value="0">All Categories</option>
@@ -58,7 +57,7 @@ export default function Start(props) {
                         id="easy" 
                         value="easy" 
                         checked={props.difficulty === "easy"}
-                        onChange={props.handleDifficulty}
+                        onChange={props.handleOptions}
                     /> 
                     <label htmlFor="easy">Easy</label>
                     <br />
@@ -69,7 +68,7 @@ export default function Start(props) {
                         id="medium" 
                         value="medium"
                         checked={props.difficulty === "medium"}                            
-                        onChange={props.handleDifficulty}
+                        onChange={props.handleoptions}
                     />
                     <label htmlFor="medium">Medium</label>
                     <br />
@@ -80,7 +79,7 @@ export default function Start(props) {
                         id="hard" 
                         value="hard"
                         checked={props.difficulty === "hard"}
-                        onChange={props.handleDifficulty}
+                        onChange={props.handleOptions}
                     />
                     <label htmlFor="hard">Hard</label>
                     <br />
