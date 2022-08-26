@@ -1,16 +1,13 @@
 // importing React to use State, Effect, and Callback Hooks. Importing the components
-
 import React from "react"
 import Start from "./components/Start"
 import Quiz from "./components/Quiz"
 
 
 // composing and exporting the App
-
 export default function App() {
    
   // setting up the States that need to be on the top level
-
   const [quiz, setQuiz] = React.useState({})  // an object that will hold the data fetched from an api
   const [category, setCategory] = React.useState(0)  // keeps track of the category chosen for the api fetch
   const [difficulty, setDifficulty] = React.useState("medium")  // keeps track of the difficulty chosen for the api fetch
@@ -18,7 +15,6 @@ export default function App() {
     
 
   // declaring a function that sets the difficulty/category based on the event target
-
   function handleOptions(event) {
 
     // using a ternary to determine whether to set difficulty or cateogory
@@ -28,14 +24,12 @@ export default function App() {
   
 
   // using Callback hook to switch between the Start and Quiz components
-
   const handleQuiz = React.useCallback(()=> {
     setQuizGenerated(prevState => !prevState)}
   ,[])
 
 
   // using Effect hook to fetch from an api and set the quiz data
-   
   React.useEffect(()=> {
 
     fetch(`https://opentdb.com/api.php?amount=5&category=${category}&difficulty=${difficulty}&type=multiple`)
@@ -46,7 +40,6 @@ export default function App() {
     
 
   // composing the JSX, passing props, conditionally rendering either Start or Quiz //
-
   return(
 
     <div>

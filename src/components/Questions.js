@@ -1,16 +1,13 @@
 // importing dependencies
-
 import {nanoid} from "nanoid"
 import {decode} from "html-entities"
 
 
 // composing and exporting the Questions component
-
 export default function Questions(props) {
     
 
     // declaring a function that maps chosen answers into the questionsArray
-
     function handleAnswers(event) {
 
         const {name, value} = event.target // destructured event.target to save space below
@@ -24,13 +21,11 @@ export default function Questions(props) {
 
 
     // initialising objects for conditionally rendered styles for the quiz results
-    
     const correctAnswerStyles = {background: props.quizFinished && "#94D7A2", border: props.quizFinished && "none",}
     const incorrectAnswerStyles = {opacity: props.quizFinished && 0.5,}
 
 
     // mapped the questionsArray into JSX elements
-        
     const questionElements = props.questionsArray.map(question => {
         
 
@@ -116,7 +111,6 @@ export default function Questions(props) {
     
 
     //composing the Questions component JSX
-    
     return (
         <div className="quiz--question_answer">{questionElements}</div>
     )

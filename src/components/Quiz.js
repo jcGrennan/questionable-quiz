@@ -1,5 +1,4 @@
 // importing React for Hooks, Questions component, css, and decorative images
-
 import React from "react"
 import Questions from "./Questions"
 import "./Quiz.css"
@@ -8,12 +7,10 @@ import blob4 from "../images/blob4.png"
 
 
 // composing and exporting Quiz component
-
 export default function Quiz(props) {
     
     
     // mapping the quiz into objects and setting them to questionsArray state
-
     const [questionsArray, setQuestionsArray] = React.useState(
 
         props.quiz.map(question => (
@@ -34,14 +31,12 @@ export default function Quiz(props) {
     
 
     // declaring a function that sets quizFinished to true to show correctAnswerCount
-
     function handleResults() {
         setQuizFinished(true)
     }
 
 
     // using Effect hook to count the correctAnswers as multiple states involved
-
     React.useEffect(() => {
 
         let currentCount = 0  // initiliasing a variable that wil reset to prevent count from stacking
@@ -58,7 +53,6 @@ export default function Quiz(props) {
     
   
     // composing the JSX
-
     return(
 
         <div className="quiz">

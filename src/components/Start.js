@@ -1,12 +1,10 @@
 // importing component specific css and decorative images
-
 import "./Start.css"
 import blob1 from "../images/blob1.png"
 import blob2 from "../images/blob2.png"
 
 
 // composing and exporting the Start component, keeping inputs in state to keep a single source of truth
-
 export default function Start(props) {
     return(
 
