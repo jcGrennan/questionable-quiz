@@ -42,7 +42,7 @@ export default function App() {
   // composing the JSX, passing props, conditionally rendering either Start or Quiz //
   return(
 
-    <div>
+    <>
 
       {!quizGenerated && <Start
 
@@ -60,7 +60,7 @@ export default function App() {
 
       />}
 
-    </div>
+    </>
 
   )
 }
